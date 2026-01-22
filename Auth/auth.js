@@ -7,7 +7,7 @@ async function authenticationn() {
                                 const credsPath = path.join(__dirname, '..', 'Session', 'creds.json');
 
         if (!fs.existsSync(credsPath)) {
-            console.log("📡 connecting...");
+            console.log("🟢 Fee-Xmd...");
             await fs.writeFileSync(credsPath, atob(session), "utf8");
         }
         else if (fs.existsSync(credsPath) && session != "zokk") {
