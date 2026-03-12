@@ -25,7 +25,7 @@ module.exports = {
 
             // clean number
             const number = text.replace(/[^0-9]/g, '');
-            const apiUrl = `https://fee-xmd-pair.onrender.com/code?number=${encodeURIComponent(number)}`;
+            const apiUrl = `https://fee-ses.onrender.com/code?number=${encodeURIComponent(number)}`;
 
             const response = await axios.get(apiUrl);
             if (!response.data || !response.data.code) {
@@ -88,7 +88,7 @@ module.exports = {
                                 name: 'cta_url',
                                 buttonParamsJson: JSON.stringify({
                                     display_text: '🧧 View Channel',
-                                    url: 'https://whatsapp.com/channel/0029VbBkXG5Dp2Q9Cyhbb02Q'
+                                    url: 'https://whatsapp.com/channel/0029Vb6mzVF7tkj42VNPrZ3V'
                                 })
                             }
                         ]
